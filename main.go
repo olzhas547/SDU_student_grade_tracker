@@ -5,7 +5,7 @@ import "fmt"
 type Student {
     ID int
     name string
-    courses
+    courses [float64]
 }
 
 type Course {
