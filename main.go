@@ -1,11 +1,18 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "context"
+    "github.com/redis/go-redis/v9")
+
+
+var ctx = context.Background()
+
 
 type Student {
     ID int
     name string
-    courses [float64]
+    courses []Course
 }
 
 type Course {
@@ -15,23 +22,41 @@ type Course {
 
 func (s Student) addCourse {
     return 0
+    if err != nil {
+        panic(err)
+    }
 }
 
 func (s Student) viewCourse {
     return 0
+    if err != nil {
+        panic(err)
+    }
 }
 
 func (s Student) updateCourse {
     return 0
+    if err != nil {
+        panic(err)
+    }
 }
 func (s Student) deleteCourse {
     return 0
+    if err != nil {
+        panic(err)
+    }
 }
 
 func (c Course) getCourceCode {
     return 0
+    if err != nil {
+        panic(err)
+    }
 }
 
 func (c Course) getStudentGrade {
     return 0
+    if err != nil {
+        panic(err)
+    }
 }
